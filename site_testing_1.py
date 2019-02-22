@@ -63,4 +63,5 @@ if __name__ == "__main__":
     d = webdriver.Chrome('/Users/jamespetullo/Downloads/chromedriver')
     _credentials = [i.strip('\n') for i in open('site_creds.txt')]
     _vals = [{'email':_credentials[i], 'password':_credentials[i+1], 'name':''.join(random.choice(string.ascii_letters) for _ in range(10)), 'site_password':''.join(random.choice(string.printable) for _ in range(8))} for i in range(0, len(_credentials), 2)]
+    _tasks = SignupTest(d)
     _tasks(_vals)
