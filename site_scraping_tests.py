@@ -6,7 +6,8 @@ def initialize(_f:typing.Callable) -> typing.Callable:
     def _wrapper(_self, _payload:dict) -> typing.Any:
         with open(f'test_logger{sum(i.startswith("test_logger") for i in os.listdir(os.getcwd()))+1}.txt', 'a') as f:
             d = datetime.datetime.now()
-            f.write(f"{str(d)}: Intializing test => name={_payload['name']}, email={_payload['email']}\n")
+            for _val in _payload:
+                f.write(f"{str(d)}: Intializing test => name={_val['name']}, email={_val['email']}\n")
 
         return _f(_self, _payload)
     return _wrapper
