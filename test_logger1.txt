@@ -1,0 +1,7 @@
+2019-02-21 23:03:35.865307: Intializing test => name=kjMcejKQVx, email=datadocs.testing.1@gmail.com
+2019-02-21 23:03:35.865307: Intializing test => name=BCVlSWXNpM, email=datadocs.testing.2@gmail.com
+2019-02-21 23:03:42.822638: executed 'site_signup'. Result: failed
+2019-02-21 23:03:45.569408: executed 'select_payment_tier'. Result: succeeded
+2019-02-21 23:04:18.570560: executed 'gmail_login_check'. Result: succeeded
+2019-02-21 23:04:26.137354: executed 'site_signup'. Result: succeeded
+2019-02-21 23:04:30.891264: executed 'select_payment_tier'. Result: succeeded
